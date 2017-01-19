@@ -187,7 +187,8 @@ module.exports = {
   // Point ESLint to our predefined config.
   eslint: {
     configFile: path.join(__dirname, '../.eslintrc'),
-    useEslintrc: false
+    useEslintrc: false,
+    fix: customConfig.eslintFixErrors
   },
   // @remove-on-eject-end
   // We use PostCSS for autoprefixing only.
