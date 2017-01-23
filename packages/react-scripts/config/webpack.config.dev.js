@@ -10,6 +10,7 @@
 // @remove-on-eject-end
 
 var autoprefixer = require('autoprefixer');
+var stylelint = require("stylelint");
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
@@ -196,6 +197,7 @@ module.exports = {
   // We use PostCSS for autoprefixing only.
   postcss: function() {
     return [
+      stylelint({}),
       autoprefixer({
         browsers: [
           '>1%',
