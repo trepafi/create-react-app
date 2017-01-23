@@ -1,6 +1,6 @@
 {
   "name": "@fathom-london/react-scripts",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "description": "Configuration and scripts for Create React App.",
   "repository": "fathomlondon/create-react-app",
   "license": "BSD-3-Clause",
@@ -63,6 +63,7 @@
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
+    "webpack-svgstore-plugin": "^3.0.6",
     "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {
