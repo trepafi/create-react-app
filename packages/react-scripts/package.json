@@ -1,6 +1,6 @@
 {
   "name": "@fathom-london/react-scripts",
-  "version": "0.8.6",
+  "version": "0.8.8",
   "description": "Configuration and scripts for Create React App.",
   "repository": "fathomlondon/create-react-app",
   "license": "BSD-3-Clause",
@@ -67,8 +67,7 @@
   },
   "devDependencies": {
     "react": "^15.3.0",
-    "react-dom": "^15.3.0",
-    "webpack-svgstore-plugin": "^3.0.6"
+    "react-dom": "^15.3.0"
   },
   "optionalDependencies": {
     "fsevents": "1.0.14"
