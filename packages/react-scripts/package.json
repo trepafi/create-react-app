@@ -67,7 +67,8 @@
   },
   "devDependencies": {
     "react": "^15.3.0",
-    "react-dom": "^15.3.0"
+    "react-dom": "^15.3.0",
+    "webpack-svgstore-plugin": "^3.0.6"
   },
   "optionalDependencies": {
     "fsevents": "1.0.14"
