@@ -208,7 +208,16 @@ module.exports = {
   // We use PostCSS for autoprefixing only.
   postcss: function() {
     return [
-      stylelint(),
+      stylelint({
+        config: {
+          extends: [
+            "stylelint-config-standard",
+            "stylelint-config-css-modules"
+          ],
+          defaultSeverity: "error",
+          rules: []
+        }
+      }),
       autoprefixer({
         browsers: [
           '>1%',
