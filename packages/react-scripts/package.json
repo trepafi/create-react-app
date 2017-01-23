@@ -1,6 +1,6 @@
 {
   "name": "@fathom-london/react-scripts",
-  "version": "0.8.12",
+  "version": "0.8.13",
   "description": "Configuration and scripts for Create React App.",
   "repository": "fathomlondon/create-react-app",
   "license": "BSD-3-Clause",
