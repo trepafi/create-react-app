@@ -170,6 +170,10 @@ module.exports = {
         test: /\.css$/,
         loader: customConfig.cssLoader.dev
       },
+      {
+        test: /\.css\?global$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?importLoaders=1')
+      },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
       {
