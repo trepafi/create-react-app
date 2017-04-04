@@ -1,8 +1,8 @@
 {
-  "name": "@fathom-london/react-scripts",
+  "name": "@pirum/react-scripts",
   "version": "0.8.16",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "fathomlondon/create-react-app",
+  "repository": "trepafi/create-react-app",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
