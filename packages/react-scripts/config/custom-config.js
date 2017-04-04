@@ -3,11 +3,15 @@ var eslintFixKey = 'FIX_ESLINT';
 
 module.exports = function(env) {
   // Set default values
+  var globalLoader = {
+    dev: 'style!css?importLoaders=1!postcss',
+    prod: ['style', 'css?importLoaders=1!postcss']
+  };
+
   var config = {
-    cssLoader: {
-      dev: 'style!css?importLoaders=1!postcss',
-      prod: ['style', 'css?importLoaders=1!postcss']
-    },
+    cssLoader: globalLoader,
+    cssGlobals: [ /react\-select\.css$/ ],
+    cssGlobalLoader: globalLoader,
     eslintFixErrors: false
   };
 

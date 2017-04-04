@@ -167,12 +167,13 @@ module.exports = {
       // In production, we use a plugin to extract that CSS to a file, but
       // in development "style" loader enables hot editing of CSS.
       {
-        test: /\.css$/,
-        loader: customConfig.cssLoader.dev
+        test: customConfig.cssGlobals,
+        loader: customConfig.cssGlobalLoader.dev
       },
       {
-        test: /\.css\?global$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?importLoaders=1')
+        test: /\.css$/,
+        exclude: customConfig.cssGlobals,
+        loader: customConfig.cssLoader.dev
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.
