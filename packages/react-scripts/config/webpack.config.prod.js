@@ -183,10 +183,6 @@ module.exports = {
         test: /\.css$/,
         exclude: customConfig.cssGlobals,
         loader: ExtractTextPlugin.extract.apply(null, customConfig.cssLoader.prod)
-      },
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract.apply(null, customConfig.cssLoader.prod)
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
