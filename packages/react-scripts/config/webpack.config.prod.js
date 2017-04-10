@@ -220,7 +220,9 @@ module.exports = {
             "stylelint-config-css-modules"
           ],
           defaultSeverity: "error",
-          rules: []
+          rules: {
+            "rule-empty-line-before": "always"
+          }
         }
       }),
       autoprefixer({
